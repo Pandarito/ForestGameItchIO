@@ -63,6 +63,7 @@ a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
 NAME room 1
 ITM 0 13,1
 ITM 4 2,6
+ITM d 8,9
 EXT 15,9 1 0,9
 PAL 0
 TUNE 2
@@ -189,12 +190,21 @@ WAL true
 TIL b
 00000000
 00000000
-00000111
-11001000
-00111110
-00011100
-00110011
-11000000
+00100100
+10001010
+00010101
+01000000
+10001010
+00000000
+>
+00000000
+00000010
+01000100
+00101000
+01010010
+00000100
+01010010
+10000100
 NAME shrubs
 
 SPR A
@@ -461,6 +471,27 @@ ITM c
 NAME Sticks
 DLG c
 
+ITM d
+00000000
+00000000
+01111110
+00111100
+00011000
+00000000
+00000000
+00000000
+>
+00000000
+00000000
+00000000
+01111110
+00111100
+00011000
+00000000
+00000000
+NAME waypoint 9
+DLG d
+
 DLG 0
 Young traveler, can you do me a favor?{pg}I have been stuck in this forest for many years now.{pg}I don't have that much time left to live.{pg}Try and find a way out of here for my sake, and carry on my legacy...
 NAME old man dialog
@@ -564,6 +595,10 @@ DLG c
 A bunch of sticks... Maybe it would be useful later.
 NAME item c dialog
 
+DLG d
+You stand in front of an Old Man with a wooden cane and a cloak...
+NAME waypoint 9 dialog
+
 VAR a
 42
 
@@ -580,9 +615,9 @@ TUNE 1
 3l,0,0,0,s,0,4m,0,0,0,4r,0,0,0,0,0
 16s2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME finale fanfare
-KEY C,D,E,F,G,A,B d,r,m,s,l
+KEY C,D,D#,F,G,G#,A# d,r,m,s,l
 TMP XFST
-SQR P2 P8
+SQR P4 P8
 ARP INT8
 
 TUNE 2
